@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function makeNoButtonMove() {
+            let noButton = document.getElementById("noButton");
+            console.log(noButton.style);
+            let randomNumberLeft = Math.random() * 1000;
+            let randomNumberTop = Math.random() * 500;
+            noButton.style.left = randomNumberLeft + "px";
+            noButton.style.top = randomNumberTop + "px";
+        }
+    </script>
+</head>
+<style>
+    #noButton {
+        position: absolute;
+    }
+</style>
+<body>
+    <h1>Do you love me?</h1>
+    <button onclick='alert("<<<<3333")'>YES</button>
+    <button id="noButton" onmouseover="makeNoButtonMove()">NO</button>
+</body>
+</html>
